@@ -8,8 +8,7 @@ import {
   HomeIcon,
   DocumentDuplicateIcon,
   BuildingLibraryIcon,
-} from "@heroicons/react/24/outline";
-import clsx from "clsx";
+} from "@heroicons/react/24/solid";
 
 interface NavLinksProps {
   isExpanded: boolean;
@@ -48,23 +47,12 @@ const NavLinks = ({ isExpanded }: NavLinksProps) => {
           <Link
             key={link.href}
             href={link.href}
-            className={clsx(
-              "flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3",
-              {
-                "bg-sky-100 text-blue-600": pathname === link.href,
-              }
-            )}
+            className="flex items-center px-4 py-3 hover:bg-gradient-to-r hover:from-[#990000] hover:via-[#FF6600] hover:via-[#FFCC00] hover:to-[#0066CC] transition-all duration-200"
           >
-            <LinkIcon className="w-6" />
+            <LinkIcon className="h-6 w-6 mr-4 bg-gray-800" />
             {isExpanded && (
               <span className="ml-3 text-sm font-medium">{link.name}</span>
             )}
-            {!isExpanded && (
-              <div className="absolute left-12 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                {link.name}
-              </div>
-            )}
-            <p className="hidden md:block">{link.name}</p>
           </Link>
         );
       })}
