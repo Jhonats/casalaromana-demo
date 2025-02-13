@@ -9,6 +9,7 @@ import {
   DocumentDuplicateIcon,
   BuildingLibraryIcon,
 } from "@heroicons/react/24/solid";
+import { FolderIcon } from "@heroicons/react/20/solid";
 
 interface NavLinksProps {
   isExpanded: boolean;
@@ -22,23 +23,27 @@ const links = [
   },
   {
     name: "Documentos",
-    href: "/documents",
+    href: "/dashboard/documents",
     icon: DocumentDuplicateIcon,
   },
   {
     name: "Usuarios",
-    href: "/users",
+    href: "/dashboard/users",
     icon: UserGroupIcon,
   },
   {
     name: "Comercios",
-    href: "/commerce",
+    href: "/dashboard/commerce",
     icon: BuildingLibraryIcon,
+  },
+  {
+    name: "Solicitudes",
+    href: "/dashboard/requests",
+    icon: FolderIcon,
   },
 ];
 
 const NavLinks = ({ isExpanded }: NavLinksProps) => {
-  const pathname = usePathname();
   return (
     <>
       {links.map((link) => {
@@ -47,9 +52,9 @@ const NavLinks = ({ isExpanded }: NavLinksProps) => {
           <Link
             key={link.href}
             href={link.href}
-            className="flex items-center px-4 py-3 hover:bg-gradient-to-r hover:from-[#990000] hover:via-[#FF6600] hover:via-[#FFCC00] hover:to-[#0066CC] transition-all duration-200"
+            className="flex items-center px-4 py-3 hover:bg-gradient-to-r hover:from-[#990000] hover:via-[#FF6600] hover:via-[#FFCC00] hover:to-[#0066CC] hover:text-black transition-all duration-200"
           >
-            <LinkIcon className="h-6 w-6 mr-4 bg-gray-800" />
+            <LinkIcon className="h-6 w-6 mr-4" />
             {isExpanded && (
               <span className="ml-3 text-sm font-medium">{link.name}</span>
             )}

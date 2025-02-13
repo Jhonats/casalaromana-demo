@@ -1,5 +1,10 @@
 import React from "react";
-import Sidenav from "../components/dashboard/Sidenav";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Inicio",
+  description: "Página principal de la aplicación",
+};
 
 export default function DashboardPage() {
   return (
