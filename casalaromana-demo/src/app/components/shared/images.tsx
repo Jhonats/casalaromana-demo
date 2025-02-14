@@ -16,13 +16,13 @@ export function ClrLogo() {
 
 export function BgLogo() {
   return (
-    <div className="absolute inset-0 -z-10">
+    <div className="absolute inset-0 -z-10 bg-black">
       <Image
         src="/images/background.jpg"
         alt="Background Logo"
         fill
         quality={100}
-        className="opacity-20"
+        className="opacity-30"
         style={{ objectFit: "cover" }}
       />
     </div>

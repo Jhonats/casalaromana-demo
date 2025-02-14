@@ -22,16 +22,6 @@ const links = [
     icon: HomeIcon,
   },
   {
-    name: "Documentos",
-    href: "/dashboard/documents",
-    icon: DocumentDuplicateIcon,
-  },
-  {
-    name: "Usuarios",
-    href: "/dashboard/users",
-    icon: UserGroupIcon,
-  },
-  {
     name: "Comercios",
     href: "/dashboard/commerce",
     icon: BuildingLibraryIcon,
@@ -40,6 +30,11 @@ const links = [
     name: "Solicitudes",
     href: "/dashboard/requests",
     icon: FolderIcon,
+  },
+  {
+    name: "Usuarios",
+    href: "/dashboard/users",
+    icon: UserGroupIcon,
   },
 ];
 
