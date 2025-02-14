@@ -18,31 +18,32 @@ const Sidenav: React.FC = () => {
   return (
     <div className="relative">
       <div
-        className={`h-screen bg-gray-800 text-white transition-all duration-300 
-        ${isExpanded ? "w-64" : "w-16"}`}
+        className={`h-screen bg-gray-800 text-white transition-all duration-300 flex flex-col
+        ${isExpanded ? "w-64" : "w-20"}`}
       >
         <div className="flex justify-center items-center p-4">
           <div
             className={`relative transition-all duration-300 
-            ${isExpanded ? "w-48 h-16" : "w-12 h-12"}`}
+            ${isExpanded ? "w-48 h-16" : "w-18 h-18"}`}
           >
             <ClrLogo />
           </div>
         </div>
         {/* NavLinks Section*/}
-        <nav className="pt-4">
+        <nav className="flex-1 pt-4">
           <NavLinks isExpanded={isExpanded} />
         </nav>
         {/* End of NavLinks Section*/}
+
         {/* User Profile Section */}
-        <div className="border-t border-gray-700 mb-4">
+        <div className="border-t border-gray-700">
           <div className="p-4 flex items-center gap-3">
             <div className="min-w-[40px]">
               <UserCircleIcon className="h-10 w-10 text-gray-300" />
             </div>
             {isExpanded && (
               <div className="overflow-hidden transition-all duration-300">
-                <h3 className="text-base font-semibold truncate">Admin</h3>
+                <h3 className="text-base font-semibold truncate">admin</h3>
                 <p className="text-sm text-gray-400 truncate">admin@mail.com</p>
               </div>
             )}
@@ -50,6 +51,7 @@ const Sidenav: React.FC = () => {
         </div>
         {/* End User Profile Section*/}
       </div>
+      {/* Toggle Button */}
       <button
         onClick={toggleSidenav}
         className={`absolute top-4 ${
