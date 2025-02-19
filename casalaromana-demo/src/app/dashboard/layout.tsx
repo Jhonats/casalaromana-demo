@@ -1,4 +1,4 @@
-import Sidenav from "../components/dashboard/Sidenav";
+import Sidenav from "../components/Dashboard/Sidenav";
 export default function DashboardLayout({
   children,
 }: {

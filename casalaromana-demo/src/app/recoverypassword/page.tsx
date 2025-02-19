@@ -1,4 +1,4 @@
-import RecoveryPasswordForm from "../components/login/RecoveryPasswordForm";
+import RecoveryPasswordForm from "../components/Login/RecoveryPasswordForm";
 import { Metadata } from "next";
 import { Suspense } from "react";
 import { ClrLogo, BgRecoveryBackground } from "../components/shared/images";

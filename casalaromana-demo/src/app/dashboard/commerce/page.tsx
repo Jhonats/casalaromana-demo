@@ -1,4 +1,4 @@
-import { CommerceTable } from "@/app/components/dashboard/commerce/CommerceTable";
+import { CommerceTable } from "@/app/components/Dashboard/commerce/CommerceTable";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { PlusIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";

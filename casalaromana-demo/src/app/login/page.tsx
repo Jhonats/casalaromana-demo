@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { Suspense } from "react";
-import LoginForm from "../components/login/LoginForm";
+import LoginForm from "../components/Login/LoginForm";
 import { ClrLogo, BgLogo } from "../components/shared/images";
 
 export const metadata: Metadata = {

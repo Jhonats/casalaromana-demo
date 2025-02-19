@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Overview } from "@/app/components/dashboard/overview/Overview";
-import { RecentRequests } from "@/app/components/dashboard/overview/RecentRequest";
+import { Overview } from "@/app/components/Dashboard/overview/Overview";
+import { RecentRequests } from "@/app/components/Dashboard/overview/RecentRequest";
 import { UserIcon, FileText, Store, FileCheck2 } from "lucide-react";
 import { UserGroupIcon } from "@heroicons/react/24/solid";
 
