@@ -8,11 +8,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { ClrLogo } from "../shared/images";
 
 const images = [
-  "https://images.pexels.com/photos/2581917/pexels-photo-2581917.jpeg",
-  "https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg",
-  "https://images.pexels.com/photos/2581923/pexels-photo-2581923.jpeg",
+  "/images/hero/barrels.jpg",
+  "/images/hero/tank-up.jpg",
+  "/images/hero/tanks.jpg",
 ];
 
 export default function Hero() {
@@ -22,12 +23,12 @@ export default function Hero() {
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="relative h-[80vh] w-full">
+              <div className="relative h-[80vh] w-full bg-black">
                 <Image
-                  src={image || "/placeholder.svg"}
+                  src={image}
                   alt={`Slide ${index + 1}`}
                   fill
-                  className="object-cover"
+                  className="object-cover opacity-50"
                   priority={index === 0}
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50">
@@ -35,34 +36,19 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="container flex h-full flex-col items-start justify-center text-white"
+                    className="container flex h-full flex-col items-center justify-center text-white"
                   >
-                    <h1 className="max-w-[800px] text-5xl font-bold leading-tight sm:text-6xl md:text-7xl p-4">
-                      Innovación en Soluciones Energéticas
-                    </h1>
-                    <p className="mt-6 max-w-[600px] text-lg sm:text-xl text-gray-300 px-4">
+                    <ClrLogo />
+                    <h2 className="mt-6 max-w-[600px] text-5xl md:text-3xl sm:text-xl text-gray-300 text-center px-4">
                       Líderes en distribución y almacenamiento de combustible
                       con más de 20 años de experiencia
-                    </p>
+                    </h2>
                     <motion.div
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.5 }}
                       className="mt-8 flex space-x-4"
-                    >
-                      <a
-                        href="#services"
-                        className="rounded-md bg-secondary px-8 py-3 text-lg font-semibold text-white transition-all duration-300 hover:bg-secondary-hover hover:scale-105"
-                      >
-                        Nuestros Servicios
-                      </a>
-                      <a
-                        href="#contact"
-                        className="rounded-md border-2 border-white bg-transparent px-8 py-3 text-lg font-semibold text-white transition-all duration-300 hover:bg-white hover:text-black hover:scale-105"
-                      >
-                        Contáctanos
-                      </a>
-                    </motion.div>
+                    ></motion.div>
                   </motion.div>
                 </div>
               </div>

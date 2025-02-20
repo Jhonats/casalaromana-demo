@@ -6,9 +6,9 @@ export default function History() {
           Nuestra Historia
         </h2>
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="relative h-[300px] overflow-hidden rounded-lg">
+          <div className="relative h-[300px] overflow-hidden rounded-lg pl-4">
             <img
-              src="/placeholder.svg?height=300&width=600"
+              src="/images/history/history.jpg"
               alt="Our History"
               className="h-full w-full object-cover"
             />

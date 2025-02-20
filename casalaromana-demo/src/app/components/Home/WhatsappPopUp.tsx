@@ -42,7 +42,7 @@ export default function WhatsappPopUp() {
             Envíanos un mensaje por WhatsApp
           </p>
           <a
-            href="https://wa.me/584121234567"
+            href={`${whatsappLink}`}
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center bg-green-500 text-white rounded-lg px-4 py-2 hover:bg-green-600 transition-colors"
