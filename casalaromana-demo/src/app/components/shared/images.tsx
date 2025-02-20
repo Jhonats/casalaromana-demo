@@ -31,7 +31,7 @@ export function BgLogo() {
 
 export function BgRecoveryBackground() {
   return (
-    <div className="absolute inset-0 -z-10">
+    <div className="absolute inset-0 -z-10 bg-black">
       <Image
         src="/images/recovery-background.jpg"
         alt="Background Logo"
