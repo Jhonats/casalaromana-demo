@@ -91,7 +91,7 @@ export default function Services() {
             <motion.div key={index} variants={cardVariants}>
               <Card className="h-full transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                 <CardHeader>
-                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-secondary to-accent text-white">
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-secondary to-accent">
                     <service.icon className="h-7 w-7" />
                   </div>
                   <CardTitle className="text-xl font-bold text-primary">

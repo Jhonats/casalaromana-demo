@@ -1,27 +1,42 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Facebook,
-  Instagram,
-  Twitter,
-  Clock,
-  MapPin,
-  Phone,
-  Mail,
-} from "lucide-react";
+import { Clock, MapPin, Phone, Mail } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  {
+    icon: "/images/SocialMedia/facebook.svg",
+    href: "#",
+    name: "Facebook",
+    hover: "hover:bg-blue-200",
+  },
+  {
+    icon: "/images/SocialMedia/instagram.svg",
+    href: "https://www.instagram.com/casalaromana.ve/",
+    name: "Instagram",
+    hover: "hover:bg-gradient-to-br from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]",
+  },
+  {
+    icon: "/images/SocialMedia/x.svg",
+    href: "X",
+    name: "X",
+    hover: "hover:bg-gray-500 text-white",
+  },
+];
+
+const footerItems = [
+  { id: "about-us", name: "Quienes somos" },
+  { id: "history", name: "Historia" },
+  { id: "services", name: "Servicios" },
+  { id: "clients", name: "Clientes" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white">
-      <div className="container py-16">
+    <footer className="bg-primary text-gray-800 border border-b-0 border-gray-800">
+      <div className="container p-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -32,12 +47,12 @@ export default function Footer() {
             <h3 className="mb-6 text-xl font-bold">Contacto</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <MapPin className="mt-1 h-5 w-5 text-accent" />
-                <p>123 Calle Principal, La Romana, República Dominicana</p>
+                <MapPin className="mt-1 h-10 w-10 text-accent" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent" />
-                <p>+1 (809) 123-4567</p>
+                <p>+58 414 123-4567</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent" />
@@ -56,7 +71,7 @@ export default function Footer() {
             <div className="flex items-start space-x-3">
               <Clock className="mt-1 h-5 w-5 text-accent" />
               <div>
-                <p>Lunes - Viernes: 8:00 AM - 6:00 PM</p>
+                <p>Lunes - Viernes: 8:00 AM - 5:00 PM</p>
                 <p>Sábado: 9:00 AM - 2:00 PM</p>
                 <p>Domingo: Cerrado</p>
               </div>
@@ -71,13 +86,13 @@ export default function Footer() {
           >
             <h3 className="mb-6 text-xl font-bold">Enlaces Rápidos</h3>
             <ul className="space-y-3">
-              {["Inicio", "Servicios", "Nosotros", "Contacto"].map((item) => (
-                <li key={item}>
+              {footerItems.map((item) => (
+                <li key={item.id}>
                   <Link
-                    href={`#${item.toLowerCase()}`}
+                    href={`#${item.id}`}
                     className="transition-colors hover:text-accent"
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -90,34 +105,40 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <h3 className="mb-6 text-xl font-bold">Síguenos</h3>
-            <div className="flex space-x-4">
+            <h3 className="mb-4 text-xl font-bold">Síguenos</h3>
+            <div className="flex space-x-6">
               {socialLinks.map((social) => (
                 <Link
-                  key={social.label}
+                  key={social.name}
                   href={social.href}
-                  className="rounded-full bg-primary-light p-3 transition-colors hover:bg-accent"
+                  className="rounded-full bg-primary-light mt-2 transition-colors"
+                  target="_blank"
                 >
-                  <social.icon className="h-5 w-5" />
+                  <Image
+                    src={social.icon}
+                    className={`${social.hover}`}
+                    width={30}
+                    height={30}
+                    alt={`${social.name}`}
+                  />
                 </Link>
               ))}
             </div>
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-          className="mt-16 border-t border-primary-light pt-8 text-center"
-        >
-          <p className="text-sm">
-            © {new Date().getFullYear()} Casa La Romana. Todos los derechos
-            reservados.
-          </p>
-        </motion.div>
       </div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.3, delay: 0.8 }}
+        className="mt-5 border-t border-primary-light p-4 text-center text-white bg-gray-800"
+      >
+        <p className="text-sm">
+          © {new Date().getFullYear()} Casa La Romana. Todos los derechos
+          reservados.
+        </p>
+      </motion.div>
     </footer>
   );
 }
