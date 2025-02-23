@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function History() {
   return (
     <section id="history" className="bg-gray-50 py-16">
@@ -7,7 +9,7 @@ export default function History() {
         </h2>
         <div className="grid gap-8 md:grid-cols-2">
           <div className="relative h-[300px] overflow-hidden rounded-lg pl-4">
-            <img
+            <Image
               src="/images/history/history.jpg"
               alt="Our History"
               className="h-full w-full object-cover"
