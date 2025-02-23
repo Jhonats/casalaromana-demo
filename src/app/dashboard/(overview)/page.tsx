@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Overview } from "@/app/components/Dashboard/overview/Overview";
 import { RecentRequests } from "@/app/components/Dashboard/overview/RecentRequest";
-import { UserIcon, FileText, Store, FileCheck2 } from "lucide-react";
+import { FileText, Store, FileCheck2 } from "lucide-react";
 import { UserGroupIcon } from "@heroicons/react/24/solid";
 
 export default function DashboardPage() {

@@ -2,11 +2,9 @@
 
 import React from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import {
   UserGroupIcon,
   HomeIcon,
-  DocumentDuplicateIcon,
   BuildingLibraryIcon,
 } from "@heroicons/react/24/solid";
 import { FolderIcon } from "@heroicons/react/20/solid";
