@@ -18,42 +18,42 @@ const clients = [
   {
     id: 1,
     name: "Cliente 1",
-    image: "/images/Clients/amy-burns.png",
+    image: "/images/clients/amy-burns.png",
   },
   {
     id: 2,
     name: "Cliente 2",
-    image: "/images/Clients/balazs-orban.png",
+    image: "/images/clients/balazs-orban.png",
   },
   {
     id: 3,
     name: "Cliente 3",
-    image: "/images/Clients/delba-de-oliveira.png",
+    image: "/images/clients/delba-de-oliveira.png",
   },
   {
     id: 4,
     name: "Cliente 4",
-    image: "/images/Clients/evil-rabbit.png",
+    image: "/images/clients/evil-rabbit.png",
   },
   {
     id: 5,
     name: "Cliente 5",
-    image: "/images/Clients/lee-robinson.png",
+    image: "/images/clients/lee-robinson.png",
   },
   {
     id: 6,
     name: "Cliente 6",
-    image: "/images/Clients/michael-novotny.png",
+    image: "/images/clients/michael-novotny.png",
   },
   {
     id: 7,
     name: "Cliente 7",
-    image: "/images/Clients/useravatar.png",
+    image: "/images/clients/useravatar.png",
   },
   {
     id: 8,
     name: "Cliente 8",
-    image: "/images/Clients/useravatar2.png",
+    image: "/images/clients/useravatar2.png",
   },
 ];
 

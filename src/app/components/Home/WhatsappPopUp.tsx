@@ -48,7 +48,7 @@ export default function WhatsappPopUp() {
             className="flex items-center justify-center bg-green-500 text-white rounded-lg px-4 py-2 hover:bg-green-600 transition-colors"
           >
             <Image
-              src="/images/SocialMedia/whatsapp.svg"
+              src="/images/socialmedia/whatsapp.svg"
               alt="WhatsApp Icon"
               width={20}
               height={20}
