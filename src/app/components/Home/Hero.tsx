@@ -11,9 +11,9 @@ import {
 import { ClrLogo } from "../shared/images";
 
 const images = [
-  "/images/hero/barrels.jpg",
-  "/images/hero/tank-up.jpg",
-  "/images/hero/tanks.jpg",
+  "/images/Hero/barrels.jpg",
+  "/images/Hero/tank-up.jpg",
+  "/images/Hero/tanks.jpg",
 ];
 
 export default function Hero() {
