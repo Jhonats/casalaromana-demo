@@ -9,6 +9,18 @@ const nextConfig: NextConfig = {
         search: "",
       },
     ],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**.vercel.app",
+      },
+      {
+        protocol: "http",
+        hostname: "localhost",
+        port: "2000",
+        pathname: "/images/**",
+      },
+    ],
   },
 };
 
