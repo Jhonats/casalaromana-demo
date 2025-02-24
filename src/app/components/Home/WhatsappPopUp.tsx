@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function WhatsappPopUp() {
-  const whatsappLink = process.env.NEXT_PUBLIC_CLR_WHATSAPP_NUMBER_URL;
+  const whatsappLink = "wa.me/584244604816";
 
   const [isOpen, setIsOpen] = useState(false);
 
