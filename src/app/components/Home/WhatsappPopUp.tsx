@@ -2,13 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import whatsappImage from "../../../../public/images/socialmedia/whatsapp.png";
 
 export default function WhatsappPopUp() {
   const whatsapp = {
     url: "https://wa.me/584244604816",
-    imageSrc: "/images/socialmedia/whatsapp.png",
-    imageOptionalSrc: "/images/socialmedia/whatsapp.svg",
+    imageSrc: "/images/SocialMedia/whatsapp.png",
+    imageOptionalSrc: "/images/SocialMedia/whatsapp.svg",
   };
 
   const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +24,7 @@ export default function WhatsappPopUp() {
         className="bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
       >
         <Image
-          // src={whatsapp.imageSrc || whatsapp.imageOptionalSrc}
-          src={whatsappImage}
+          src={whatsapp.imageSrc || whatsapp.imageOptionalSrc}
           alt="WhatsApp Icon"
           width={30}
           height={30}
