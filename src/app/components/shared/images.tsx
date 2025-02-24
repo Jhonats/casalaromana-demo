@@ -22,7 +22,7 @@ export function BgLogo() {
         alt="Background Logo"
         fill
         quality={100}
-        className="opacity-30"
+        className="opacity-30 object-cover"
         style={{ objectFit: "cover" }}
       />
     </div>

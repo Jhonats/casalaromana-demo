@@ -1,9 +1,13 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function WhatsappPopUp() {
-  const whatsappLink = "wa.me/584244604816";
+  const whatsapp = {
+    url: "wa.me/584244604816",
+    imageSrc: "/images/socialmedia/whatsapp.svg",
+  };
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,7 +23,7 @@ export default function WhatsappPopUp() {
         className="bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
       >
         <Image
-          src="/images/SocialMedia/whatsapp.svg"
+          src={whatsapp.imageSrc}
           alt="WhatsApp Icon"
           width={30}
           height={30}
@@ -41,21 +45,21 @@ export default function WhatsappPopUp() {
           <p className="text-sm text-gray-600 mb-4">
             Envíanos un mensaje por WhatsApp
           </p>
-          <a
-            href={`${whatsappLink}`}
+          <Link
+            href={`${whatsapp.url}`}
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center bg-green-500 text-white rounded-lg px-4 py-2 hover:bg-green-600 transition-colors"
           >
             <Image
-              src="/images/socialmedia/whatsapp.svg"
+              src={whatsapp.imageSrc}
               alt="WhatsApp Icon"
               width={20}
               height={20}
               className="mr-2"
             />
             <span>Enviar mensaje</span>
-          </a>
+          </Link>
         </div>
       )}
     </div>

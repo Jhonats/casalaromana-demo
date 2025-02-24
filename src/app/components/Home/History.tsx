@@ -11,8 +11,10 @@ export default function History() {
           <div className="relative h-[300px] overflow-hidden rounded-lg pl-4">
             <Image
               src="/images/history/history.jpg"
-              alt="Our History"
+              alt="Nuestra Historia"
               className="h-full w-full object-cover"
+              width={500}
+              height={500}
             />
           </div>
           <div className="space-y-4">

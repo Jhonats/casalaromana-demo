@@ -29,7 +29,7 @@ export default function Hero() {
                   alt={`Slide ${index + 1}`}
                   fill
                   className="object-cover opacity-50"
-                  priority={index === 0}
+                  quality={70}
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50">
                   <motion.div
