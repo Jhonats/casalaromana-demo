@@ -7,19 +7,19 @@ import Link from "next/link";
 
 const socialLinks = [
   {
-    icon: "/images/socialmedia/facebook.svg",
+    icon: "/images/socialmedia/facebook.png",
     href: "#",
     name: "Facebook",
     hover: "hover:bg-blue-200",
   },
   {
-    icon: "/images/socialmedia/instagram.svg",
+    icon: "/images/socialmedia/instagram.png",
     href: "https://www.instagram.com/casalaromana.ve/",
     name: "Instagram",
     hover: "hover:bg-gradient-to-br from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]",
   },
   {
-    icon: "/images/socialmedia/x.svg",
+    icon: "/images/socialmedia/x.png",
     href: "X",
     name: "X",
     hover: "hover:bg-gray-500 text-white",

@@ -6,7 +6,8 @@ import { useState } from "react";
 export default function WhatsappPopUp() {
   const whatsapp = {
     url: "wa.me/584244604816",
-    imageSrc: "/images/socialmedia/whatsapp.svg",
+    imageSrc: "/images/socialmedia/whatsapp.png",
+    imageOptionalSrc: "/images/socialmedia/whatsapp.svg",
   };
 
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function WhatsappPopUp() {
         className="bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
       >
         <Image
-          src={whatsapp.imageSrc}
+          src={whatsapp.imageSrc || whatsapp.imageOptionalSrc}
           alt="WhatsApp Icon"
           width={30}
           height={30}
