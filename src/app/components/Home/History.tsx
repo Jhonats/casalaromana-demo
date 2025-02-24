@@ -9,6 +9,7 @@ export default function History() {
         </h2>
         <div className="grid gap-8 md:grid-cols-2">
           <div className="relative h-[300px] overflow-hidden rounded-lg pl-4">
+            {/* History Background */}
             <Image
               src="/images/history/history.jpg"
               alt="Nuestra Historia"
