@@ -115,11 +115,11 @@ export default function Footer() {
                   target="_blank"
                 >
                   <Image
-                    src={social.icon}
-                    className={`${social.hover}`}
+                    src={social.icon || "/placeholder.svg"}
+                    className={social.hover}
                     width={30}
                     height={30}
-                    alt={`${social.name}`}
+                    alt={social.name}
                   />
                 </Link>
               ))}
