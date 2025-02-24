@@ -33,7 +33,7 @@ export function BgRecoveryBackground() {
   return (
     <div className="absolute inset-0 -z-10 bg-black">
       <Image
-        src="/images/recovery-background.jpg"
+        src="/images/RecoveryPassword/recovery-background.jpg"
         alt="Background Logo"
         fill
         className="opacity-20"
