@@ -20,7 +20,7 @@ export default function Navbar() {
   ];
 
   return (
-    <motion.div
+    <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -83,6 +83,6 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
-    </motion.div>
+    </motion.nav>
   );
 }

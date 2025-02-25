@@ -23,7 +23,7 @@ export default function Hero() {
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="relative h-[80vh] w-full bg-black">
+              <div className="relative h-[80vh] bg-black">
                 <Image
                   src={image}
                   alt={`Slide ${index + 1}`}
@@ -36,7 +36,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="container flex h-full flex-col items-center justify-center text-white"
+                    className="relative flex h-full flex-col items-center justify-center text-white"
                   >
                     <ClrLogo />
                     <h2 className="mt-6 max-w-[600px] text-5xl md:text-3xl sm:text-xl text-gray-300 text-center px-4">

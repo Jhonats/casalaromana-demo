@@ -35,7 +35,7 @@ const footerItems = [
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-gray-800 border border-b-0 border-gray-800">
+    <footer className="relative bg-primary text-gray-800">
       <div className="container p-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <motion.div

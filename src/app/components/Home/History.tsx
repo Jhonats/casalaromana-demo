@@ -2,20 +2,19 @@ import Image from "next/image";
 
 export default function History() {
   return (
-    <section id="history" className="bg-gray-50 py-16">
-      <div className="container">
-        <h2 className="mb-8 text-center text-3xl font-bold">
+    <section id="history" className="bg-gray-50 py-16 relative">
+      <div className="p-4">
+        <h2 className="mb-8 text-center text-4xl font-bold">
           Nuestra Historia
         </h2>
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="relative h-[300px] overflow-hidden rounded-lg pl-4">
+          <div className="relative h-[300px] overflow-hidden rounded-lg p-4">
             {/* History Background */}
             <Image
               src="/images/history/history.jpg"
               alt="Nuestra Historia"
               className="h-full w-full object-cover"
-              width={500}
-              height={500}
+              fill
             />
           </div>
           <div className="space-y-4">
