@@ -23,21 +23,32 @@ export function BgLogo() {
         fill
         quality={100}
         className="opacity-30 object-cover"
-        style={{ objectFit: "cover" }}
       />
     </div>
   );
 }
 
-export function BgRecoveryBackground() {
+export function BgRecovery() {
   return (
     <div className="absolute inset-0 -z-10 bg-black">
       <Image
-        src="/images/RecoveryPassword/recovery-background.jpg"
+        src="/images/RecoveryPassword/maintenance.jpg"
         alt="Background Logo"
         fill
-        className="opacity-20"
-        style={{ objectFit: "cover" }}
+        className="opacity-20 object-cover"
+      />
+    </div>
+  );
+}
+
+export function BgMaintenance() {
+  return (
+    <div className="absolute inset-0 -z-10 bg-black">
+      <Image
+        src="/images/maintenance/maintenance.jpg"
+        alt="Background Logo"
+        fill
+        className="opacity-40 object-cover"
       />
     </div>
   );
