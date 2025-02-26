@@ -39,7 +39,7 @@ export default function Hero() {
                     className="relative flex h-full flex-col items-center justify-center text-white"
                   >
                     <ClrLogo />
-                    <h2 className="mt-6 max-w-[600px] text-5xl md:text-3xl sm:text-xl text-gray-300 text-center px-4">
+                    <h2 className="mt-6 max-w-[600px] text-4xl md:text-3xl sm:text-4xl text-gray-300 text-center px-4">
                       Líderes en distribución y almacenamiento de combustible
                       con más de 20 años de experiencia
                     </h2>

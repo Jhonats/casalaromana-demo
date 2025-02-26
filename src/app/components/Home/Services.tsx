@@ -62,9 +62,9 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-24 bg-gradient-to-b from-gray-50 to-white"
+      className="py-20 bg-gradient-to-b from-gray-50 to-white"
     >
-      <div className="container">
+      <div className="relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -85,7 +85,7 @@ export default function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 ml-10"
+          className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 px-4"
         >
           {services.map((service, index) => (
             <motion.div key={index} variants={cardVariants}>
