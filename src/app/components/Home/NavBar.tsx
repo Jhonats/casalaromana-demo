@@ -10,15 +10,34 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+
+const navItems = [
+  { id: "about-us", name: "Quienes somos" },
+  { id: "history", name: "Historia" },
+  { id: "services", name: "Servicios" },
+  { id: "clients", name: "Clientes" },
+];
+
+const NavLink = ({ href, children, variant = "desktop" }: any) => (
+  <Link href={href}>
+    <span
+      className={`${
+        variant === "mobile"
+          ? "block px-3 py-2 rounded-md text-base font-medium"
+          : "inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+      }
+        text-gray-800 hover:text-gray-900 hover:bg-gray-200 transition duration-300 ease-in-out
+      `}
+    >
+      {children}
+    </span>
+  </Link>
+);
+
+const [isOpen, setIsOpen] = useState(false);
 
 export default function Navbar() {
-  const navItems = [
-    { id: "about-us", name: "Quienes somos" },
-    { id: "history", name: "Historia" },
-    { id: "services", name: "Servicios" },
-    { id: "clients", name: "Clientes" },
-  ];
-
   return (
     <motion.nav
       initial={{ y: -100 }}
