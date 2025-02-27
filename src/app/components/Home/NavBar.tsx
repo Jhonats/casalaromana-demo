@@ -98,7 +98,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        <Sheet>
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
             <Button variant="ghost" size="icon" className="h-10 w-10">
               <Menu className="h-6 w-6" />
@@ -107,7 +107,15 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[80%] sm:w-[350px]">
             <SheetTitle className="text-lg font-semibold px-4 py-2">
-              Menú
+              <div className="mb-6 flex justify-center">
+                <Image
+                  src="/images/casalaromanalogo.png"
+                  alt="Casa La Romana Logo"
+                  width={120}
+                  height={40}
+                  className="h-20 w-auto"
+                />
+              </div>
             </SheetTitle>
             <div className="flex flex-col h-full py-6">
               <div className="flex flex-col space-y-4 mt-6">
