@@ -135,7 +135,7 @@ export default function Navbar() {
                   </Link>
                 ))}
               </div>
-              <div className="mt-40 space-y-4 px-4">
+              <div className="mt-20 space-y-4 px-4">
                 <Link href="/signup" className="block w-full">
                   <Button
                     variant="outline"
