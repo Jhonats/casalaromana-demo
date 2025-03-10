@@ -18,7 +18,6 @@ import {
   SheetTrigger,
   SheetTitle,
 } from "@/components/ui/sheet";
-import { ClrLogo } from "../shared/images";
 
 const navItems = [
   { id: "about-us", name: "Quienes somos" },
@@ -34,7 +33,7 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.8 }}
       className="sticky top-0 z-50 w-full border-b bg-gray-100/80 backdrop-blur-md"
     >
       <div className="container flex h-16 items-center justify-between">

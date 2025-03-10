@@ -62,7 +62,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-20 bg-gradient-to-b from-gray-50 to-white"
+      className="py-8 bg-gradient-to-b from-gray-50 to-white"
     >
       <div className="relative">
         <motion.div

@@ -59,7 +59,7 @@ const clients = [
 
 export default function Clients() {
   return (
-    <section id="clients" className="py-12 bg-muted">
+    <section id="clients" className="py-8 bg-muted">
       <div className="relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

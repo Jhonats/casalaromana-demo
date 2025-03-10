@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function History() {
   return (
-    <section id="history" className="bg-gray-50 py-16 relative">
+    <section id="history" className="bg-gray-50 py-8 relative">
       <div className="p-4">
         <h2 className="mb-8 text-center text-4xl font-bold">
           Nuestra Historia
