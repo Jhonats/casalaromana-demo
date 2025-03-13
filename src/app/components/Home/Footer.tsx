@@ -47,15 +47,15 @@ export default function Footer() {
             <h3 className="mb-6 text-xl font-bold">Contacto</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <MapPin className="mt-1 h-10 w-10 text-accent" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <MapPin className="mt-1 h-5 w-5 text-gray-800" />
+                <p>Zona Industrial - Valencia</p>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-accent" />
-                <p>+58 414 123-4567</p>
+                <Phone className="h-5 w-5 text-gray-800" />
+                <p>+58 414 400-9412</p>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-accent" />
+                <Mail className="h-5 w-5 text-gray-800" />
                 <p>info@casalaromana.com</p>
               </div>
             </div>
@@ -69,11 +69,10 @@ export default function Footer() {
           >
             <h3 className="mb-6 text-xl font-bold">Horarios</h3>
             <div className="flex items-start space-x-3">
-              <Clock className="mt-1 h-5 w-5 text-accent" />
+              <Clock className="mt-1 h-5 w-5 text-gray.800" />
               <div>
                 <p>Lunes - Viernes: 8:00 AM - 5:00 PM</p>
                 <p>Sábado: 9:00 AM - 2:00 PM</p>
-                <p>Domingo: Cerrado</p>
               </div>
             </div>
           </motion.div>
@@ -90,7 +89,7 @@ export default function Footer() {
                 <li key={item.id}>
                   <Link
                     href={`#${item.id}`}
-                    className="transition-colors hover:text-accent"
+                    className="transition-colors hover:text-gray-800"
                   >
                     {item.name}
                   </Link>

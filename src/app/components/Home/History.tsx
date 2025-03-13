@@ -19,16 +19,18 @@ export default function History() {
           </div>
           <div className="space-y-4">
             <p className="text-lg text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              CASA LA ROMANA, C.A. es una empresa joven, dinámica y en
+              crecimiento, establecida en 2022, compuesta por un equipo de
+              profesionales altamente comprometidos con la excelencia. Nos
+              especializamos en ofrecer un servicio de calidad a través de
+              capacitaciones continuas y certificaciones en áreas clave como la
+              manipulación, gestión de riesgos, almacenamiento, distribución y
+              despacho de materiales peligrosos.
             </p>
             <p className="text-lg text-gray-600">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+              Nuestro enfoque nos ha permitido posicionarnos como socios
+              estratégicos de nuestros clientes, siempre manteniendo altos
+              estándares en la calidad del servicio y atención al cliente.
             </p>
           </div>
         </div>

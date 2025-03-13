@@ -9,16 +9,19 @@ export default function AboutUs() {
         <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-4 p-4">
             <p className="text-lg text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Nos enorgullece ser una de las principales distribuidoras de
+              combustible diésel a nivel nacional. Fundados con la misión de
+              satisfacer las crecientes demandas del sector energético, hemos
+              evolucionado y nos hemos consolidado como un referente en la
+              industria.
             </p>
             <p className="text-lg text-gray-600">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+              Gracias a nuestra infraestructura de vanguardia y un equipo
+              altamente capacitado, garantizamos un suministro eficiente y
+              confiable en cada entrega. Nuestro compromiso con la calidad, la
+              sostenibilidad y la innovación nos ha permitido, seguir impulsando
+              el crecimiento del sector, manteniendo siempre el foco en la
+              excelencia y el servicio al cliente
             </p>
           </div>
           <div className="relative h-[300px] overflow-hidden rounded-lg">

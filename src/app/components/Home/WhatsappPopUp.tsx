@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function WhatsappPopUp() {
   const whatsapp = {
-    url: "https://wa.me/584244604816",
+    url: "https://wa.me/584144009412",
     imageSrc: "/images/SocialMedia/whatsapp.png",
     imageOptionalSrc: "/images/SocialMedia/whatsapp.svg",
   };

@@ -45,7 +45,7 @@ const NavLinks = ({ isExpanded }: NavLinksProps) => {
           <Link
             key={link.href}
             href={link.href}
-            className="flex items-center px-4 py-3 hover:bg-gradient-to-r hover:from-[#990000] hover:via-[#FF6600] hover:via-[#FFCC00] hover:to-[#0066CC] hover:text-black transition-all duration-200"
+            className="flex items-center px-4 py-3 hover:bg-gradient-to-r hover:from-[#990000] hover:via-[#FF6600] hover:to-[#0066CC] hover:text-black transition-all duration-200"
           >
             <LinkIcon className="h-6 w-6 mr-4" />
             {isExpanded && (

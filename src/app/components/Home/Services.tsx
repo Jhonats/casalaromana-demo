@@ -8,31 +8,31 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Fuel, Truck, Settings, Shield } from "lucide-react";
+import { Fuel, Truck, Settings, Shield, ClipboardCheck } from "lucide-react";
 
 const services = [
   {
-    title: "Distribución de Combustible",
+    title: "Infraestructura y Capacidad",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, cumque aut temporibus non numquam amet, optio ducimus maiores aliquid quia nostrum impedit pariatur porro, perspiciatis similique! Fugit recusandae impedit tempora.",
+      "Contamos con una parcela de 4.900 m² y una capacidad instalada de 450.000 litros, distribuida en 9 tanques de almacenamiento, cada uno con capacidad de 50.000 litros. Nuestra capacidad de distribución simultánea es de 150,000 litros por día, lo que nos permite tener una rotación de 4.500,000 litros al mes.",
     icon: Fuel,
   },
   {
-    title: "Transporte Especializado",
+    title: "Cobertura y Flota",
     description:
-      "Flota moderna de vehículos especializados para el transporte seguro de combustible.",
+      "Podemos movilizar desde 1 litro hasta 80.000 litros de manera simultánea, asegurando un servicio eficiente y oportuno en todo el territorio nacional.",
     icon: Truck,
   },
   {
-    title: "Mantenimiento Preventivo",
+    title: "Compromiso con la Calidad",
     description:
-      "Servicios de mantenimiento y reparación de tanques y sistemas de almacenamiento.",
-    icon: Settings,
+      "En CASA LA ROMANA, C.A., la calidad es nuestra prioridad. Trabajamos con los mejores proveedores y seguimos estrictos estándares de seguridad y calidad en cada etapa de nuestro proceso de distribución.",
+    icon: ClipboardCheck,
   },
   {
-    title: "Seguridad y Cumplimiento",
+    title: "Seguridad y Confiabilidad",
     description:
-      "Garantizamos el cumplimiento de todas las normas de seguridad y regulaciones del sector.",
+      "Nuestro equipo de profesionales altamente capacitados está dedicado a garantizar que cada entrega cumpla con las normativas y requisitos establecidos",
     icon: Shield,
   },
 ];
@@ -70,15 +70,11 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold text-primary mb-4">
             Nuestros Servicios
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Ofrecemos soluciones integrales en el manejo y distribución de
-            combustible
-          </p>
         </motion.div>
         <motion.div
           variants={containerVariants}
@@ -91,15 +87,15 @@ export default function Services() {
             <motion.div key={index} variants={cardVariants}>
               <Card className="h-full transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                 <CardHeader>
-                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-secondary to-accent">
-                    <service.icon className="h-10 w-10" />
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-[#990000] via-[#FF6600] to-[#0066CC] text-gray-800">
+                    <service.icon className="h-10 w-10 " />
                   </div>
-                  <CardTitle className="text-xl font-bold text-primary">
+                  <CardTitle className="text-xl font-bold text-gray-800">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base text-gray-600">
+                  <CardDescription className="text-base text-gray-600 text-justify">
                     {service.description}
                   </CardDescription>
                 </CardContent>
