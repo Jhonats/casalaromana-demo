@@ -46,10 +46,16 @@ export default function Footer() {
           >
             <h3 className="mb-6 text-xl font-bold">Contacto</h3>
             <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <MapPin className="mt-1 h-5 w-5 text-gray-800" />
-                <p>Zona Industrial - Valencia</p>
-              </div>
+              <Link
+                href="https://maps.app.goo.gl/wfEgow11CaTyShh6A"
+                target="_blank"
+                className="hover:text-blue-700 hover:scale-300 hover:transition-colors hover:duration-300"
+              >
+                <div className="flex items-start space-x-3">
+                  <MapPin className="mt-1 h-5 w-5" />
+                  <p>Zona Industrial - Valencia</p>
+                </div>
+              </Link>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-gray-800" />
                 <p>+58 414 400-9412</p>
