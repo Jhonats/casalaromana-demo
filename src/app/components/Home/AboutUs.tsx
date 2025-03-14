@@ -7,15 +7,15 @@ export default function AboutUs() {
       <div className="p-4">
         <h1 className="mb-8 text-center text-4xl font-bold">Quienes Somos</h1>
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="space-y-4 p-4">
-            <p className="text-lg text-gray-600">
+          <div className="space-y-4 p-4 text-lg text-gray-800 text-justify">
+            <p>
               Nos enorgullece ser una de las principales distribuidoras de
               combustible diésel a nivel nacional. Fundados con la misión de
               satisfacer las crecientes demandas del sector energético, hemos
               evolucionado y nos hemos consolidado como un referente en la
               industria.
             </p>
-            <p className="text-lg text-gray-600">
+            <p>
               Gracias a nuestra infraestructura de vanguardia y un equipo
               altamente capacitado, garantizamos un suministro eficiente y
               confiable en cada entrega. Nuestro compromiso con la calidad, la
