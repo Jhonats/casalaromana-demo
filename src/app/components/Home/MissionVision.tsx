@@ -19,13 +19,13 @@ export default function MissionVision() {
       id="mission-vision"
       className="relative py-24 overflow-hidden bg-gray-50"
     >
-      <motion.div style={{ y }} className="absolute inset-0 z-0">
+      {/* <motion.div style={{ y }} className="absolute inset-0 z-0">
         <img
           src="/images/missionvision/missionvision.jpeg"
           alt="Mission Vision Background"
           className="w-full h-full object-cover"
         />
-      </motion.div>
+      </motion.div> */}
       <div className="relative z-10 container mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ export default function MissionVision() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white/80 backdrop-blur-md rounded-lg p-8 md:p-10 shadow-xl"
+              className="bg-white/80 backdrop-blur-md rounded-lg p-8 md:p-10 shadow-lg"
             >
               <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#990000] via-[#FF6600] to-[#0066CC] text-black">
                 <Target className="h-8 w-8" />
@@ -63,7 +63,7 @@ export default function MissionVision() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="bg-white/80 backdrop-blur-md rounded-lg p-8 md:p-10 shadow-xl"
+              className="bg-white/80 backdrop-blur-md rounded-lg p-8 md:p-10 shadow-xl border border-gray-200"
             >
               <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#990000] via-[#FF6600] to-[#0066CC] text-black">
                 <Rocket className="h-8 w-8" />
