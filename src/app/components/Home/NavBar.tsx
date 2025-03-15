@@ -21,9 +21,9 @@ import {
 
 const navItems = [
   { id: "about-us", name: "Quienes somos" },
+  { id: "MissionVision", name: "Mision y Vision" },
   { id: "history", name: "Historia" },
   { id: "services", name: "Servicios" },
-  { id: "clients", name: "Clientes" },
 ];
 
 export default function Navbar() {
@@ -56,7 +56,7 @@ export default function Navbar() {
                   <NavigationMenuLink
                     className={cn(
                       "inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors",
-                      "text-gray-700 hover:text-gray-900",
+                      "text-gray-700 hover:text-white",
                       "hover:bg-gradient-to-r hover:from-[#8B0000] hover:via-[#FF4500] hover:to-[#FFD700]",
                       "hover:bg-[length:200%_100%] hover:animate-gradient",
                       "focus:bg-gray-200 focus:text-gray-900 focus:outline-none",

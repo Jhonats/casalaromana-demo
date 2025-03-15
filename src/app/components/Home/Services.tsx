@@ -88,14 +88,14 @@ export default function Services() {
               <Card className="h-full transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                 <CardHeader>
                   <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-[#990000] via-[#FF6600] to-[#0066CC] text-black">
-                    <service.icon className="h-10 w-10 " />
+                    <service.icon className="h-10 w-10" />
                   </div>
                   <CardTitle className="text-xl font-bold text-gray-800">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base text-gray-600 text-justify">
+                  <CardDescription className="text-base text-gray-800 text-justify">
                     {service.description}
                   </CardDescription>
                 </CardContent>
