@@ -16,7 +16,7 @@ export default function MissionVision() {
   return (
     <section
       ref={ref}
-      id="mission-vision"
+      id="missionvision"
       className="relative py-24 overflow-hidden bg-gray-50"
     >
       {/* <motion.div style={{ y }} className="absolute inset-0 z-0">

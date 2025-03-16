@@ -21,7 +21,7 @@ import {
 
 const navItems = [
   { id: "about-us", name: "Quienes somos" },
-  { id: "MissionVision", name: "Mision y Vision" },
+  { id: "missionvision", name: "Mision y Vision" },
   { id: "history", name: "Historia" },
   { id: "services", name: "Servicios" },
 ];
