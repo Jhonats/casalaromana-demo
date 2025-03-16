@@ -17,7 +17,7 @@ export default function History() {
               fill
             />
           </div>
-          <div className="space-y-4 text-lg text-gray-800 text-justify">
+          <div className="space-y-4 p-4 text-lg text-gray-800 text-justify">
             <p>
               CASA LA ROMANA, C.A. es una empresa joven, dinámica y en
               crecimiento, establecida en 2022, compuesta por un equipo de
