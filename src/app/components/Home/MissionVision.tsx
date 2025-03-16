@@ -8,13 +8,13 @@ const missionVision = [
   {
     title: "Nuestra Misión",
     description:
-      "Nuestra misión es satisfacer las crecientes demandas del sector energético, ofreciendo soluciones innovadoras y confiables que impulsen el desarrollo sostenible del país.",
+      "Nuestra misión es comercializar diésel mediante la compra, venta, almacenamiento, transporte y distribución para diversos usos: industrial, agroindustrial, agrícola, pecuario, pesquero, del sector salud, así como para servicios básicos, tanto públicos como privados. Buscamos garantizar la operatividad de todos los sectores productivos del país.",
     icon: Target,
   },
   {
     title: "Nuestra Visión",
     description:
-      "Aspiramos a ser líderes en la distribución de combustibles, reconocidos por nuestra excelencia operativa, compromiso con la calidad y contribución al progreso del sector energético.",
+      "Aspiramos a ser la distribuidora de combustible diésel más reconocida y respetada en el país, destacándonos por nuestra excelencia operativa y compromiso con la sostenibilidad. Nos esforzamos por innovar y mejorar continuamente nuestros procesos para ofrecer un servicio que supere las expectativas de nuestros clientes.",
     icon: Rocket,
   },
 ];

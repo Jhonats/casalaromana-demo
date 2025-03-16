@@ -19,18 +19,19 @@ export default function History() {
           </div>
           <div className="space-y-4 p-4 text-lg text-gray-800 text-justify">
             <p>
-              CASA LA ROMANA, C.A. es una empresa joven, dinámica y en
-              crecimiento, establecida en 2022, compuesta por un equipo de
-              profesionales altamente comprometidos con la excelencia. Nos
-              especializamos en ofrecer un servicio de calidad a través de
-              capacitaciones continuas y certificaciones en áreas clave como la
-              manipulación, gestión de riesgos, almacenamiento, distribución y
-              despacho de materiales peligrosos.
+              CASA LA ROMANA, C.A fue establecida en 2022, siendo una empresa
+              joven, dinámica y en crecimiento. Contamos con capacitaciones
+              continuas y certificaciones en áreas clave como la manipulación,
+              gestión de riesgos, almacenamiento, distribución y despacho de
+              materiales peligrosos siguiendo los más altos estándares de
+              seguridad.
             </p>
             <p>
-              Nuestro enfoque nos ha permitido posicionarnos como socios
-              estratégicos de nuestros clientes, siempre manteniendo altos
-              estándares en la calidad del servicio y atención al cliente.
+              Nos enorgullece ser una de las principales distribuidoras de
+              combustible diésel a nivel nacional. Fundados con la misión de
+              satisfacer las crecientes demandas del sector energético, hemos
+              evolucionado y nos hemos consolidado como un referente en la
+              industria
             </p>
           </div>
         </div>
