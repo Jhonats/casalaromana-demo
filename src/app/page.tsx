@@ -5,12 +5,15 @@ import History from "./components/Home/History";
 import Services from "./components/Home/Services";
 import Footer from "./components/Home/Footer";
 import MissionVision from "./components/Home/MissionVision";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
-      <Hero />
+      <Suspense fallback={<div>Loading video...</div>}>
+        <Hero />
+      </Suspense>
       <AboutUs />
       <MissionVision />
       <History />
