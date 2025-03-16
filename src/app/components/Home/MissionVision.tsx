@@ -42,7 +42,7 @@ const cardVariants = {
 
 export default function MissionVision() {
   return (
-    <section id="mission-vision" className="py-8 bg-gray-50">
+    <section id="missionvision" className="py-8 bg-gray-50">
       <div className="relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

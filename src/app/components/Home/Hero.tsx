@@ -1,13 +1,5 @@
 "use client";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { ClrLogo } from "../shared/images";
 
 export default function Hero() {
