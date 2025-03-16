@@ -48,7 +48,7 @@ export default function MissionVision() {
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
                 Nuestra Misión
               </h3>
-              <p className="text-lg text-gray-800 mb-4">
+              <p className="text-lg text-gray-800 mb-4 text-justify">
                 Nuestra misión es comercializar diésel mediante la compra,
                 venta, almacenamiento, transporte y distribución para diversos
                 usos: industrial, agroindustrial, agrícola, pecuario, pesquero,
@@ -71,7 +71,7 @@ export default function MissionVision() {
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
                 Nuestra Visión
               </h3>
-              <p className="text-lg text-gray-800 mb-4">
+              <p className="text-lg text-gray-800 mb-4 text-justify">
                 Aspiramos a ser la distribuidora de combustible diésel más
                 reconocida y respetada en el país, destacándonos por nuestra
                 excelencia operativa y compromiso con la sostenibilidad. Nos
