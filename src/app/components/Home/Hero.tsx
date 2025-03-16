@@ -1,13 +1,5 @@
 "use client";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { ClrLogo } from "../shared/images";
 
 export default function Hero() {
@@ -17,7 +9,7 @@ export default function Hero() {
         <video
           src="/video/HeroVideoCompressed.mp4"
           autoPlay={true}
-          className=" h-full w-full object-cover "
+          className="h-full w-full object-cover"
           loop={true}
           muted={true}
         />
