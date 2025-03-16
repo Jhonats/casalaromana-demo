@@ -17,7 +17,7 @@ export default function Hero() {
         <video
           src="/video/HeroVideoCompressed.mp4"
           autoPlay={true}
-          className=" h-full w-full object-cover "
+          className="h-full w-full object-cover"
           loop={true}
           muted={true}
         />
