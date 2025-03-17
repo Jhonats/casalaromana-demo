@@ -124,7 +124,7 @@ export default function Navbar() {
                     href={`#${item.id}`}
                     className={cn(
                       "px-4 py-3 text-base font-medium rounded-md",
-                      "text-gray-700 hover:text-gray-900",
+                      "text-gray-700 hover:text-white",
                       "hover:bg-gradient-to-r hover:from-[#8B0000] hover:via-[#FF4500] hover-to-[#FFD700]",
                       "transition-colors"
                     )}
