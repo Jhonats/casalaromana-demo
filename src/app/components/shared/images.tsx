@@ -7,8 +7,8 @@ export function ClrLogo() {
         src="/images/casalaromanalogo.png"
         alt="Logo"
         className="object-contain"
-        width={300}
-        height={200}
+        width={400}
+        height={300}
       />
     </div>
   );
