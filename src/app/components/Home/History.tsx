@@ -11,7 +11,7 @@ export default function History() {
           <div className="relative h-[300px] overflow-hidden rounded-lg p-4">
             {/* History Background */}
             <Image
-              src="/images/history/history.jpg"
+              src="/images/history/history.png"
               alt="Nuestra Historia"
               className="h-full w-full object-cover"
               fill
