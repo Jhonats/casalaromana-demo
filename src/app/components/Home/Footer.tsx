@@ -151,8 +151,8 @@ export default function Footer() {
         className="mt-5 border-t border-primary-light p-4 text-center text-white bg-gray-800"
       >
         <p className="text-sm">
-          © {new Date().getFullYear()} Casa La Romana C.A. Todos los derechos
-          reservados.
+          © {new Date().getFullYear()} Casa La Romana C.A. J-501539189. Todos
+          los derechos reservados.
         </p>
       </motion.div>
     </footer>

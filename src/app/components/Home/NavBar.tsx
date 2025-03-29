@@ -39,10 +39,10 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2 px-4">
           <Image
-            src="/images/casalaromanalogo.png"
+            src="/images/casalaromanalogo2.png"
             alt="Casa La Romana Logo"
-            width={120}
-            height={40}
+            width={300}
+            height={300}
             className="h-10 w-auto transition-transform duration-300 hover:scale-105"
           />
         </Link>
