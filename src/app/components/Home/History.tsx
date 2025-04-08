@@ -8,7 +8,7 @@ export default function History() {
           Nuestra Historia
         </h2>
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="relative h-[300px] overflow-hidden rounded-lg p-4">
+          <div className="relative h-auto md:h-[300px] w-full aspect-video md:aspect-auto overflow-hidden rounded-lg">
             {/* History Background */}
             <Image
               src="/images/history/history.png"

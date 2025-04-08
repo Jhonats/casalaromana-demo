@@ -108,7 +108,7 @@ export default function Navbar() {
             <SheetTitle className="text-lg font-semibold px-4 py-2">
               <div className="mb-6 flex justify-center">
                 <Image
-                  src="/images/casalaromanalogo.png"
+                  src="/images/casalaromanalogo2.png"
                   alt="Casa La Romana Logo"
                   width={120}
                   height={40}

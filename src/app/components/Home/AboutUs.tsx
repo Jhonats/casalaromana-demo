@@ -16,9 +16,9 @@ export default function AboutUs() {
               confiabilidad.
             </p>
           </div>
-          <div className="relative h-[300px] overflow-hidden rounded-lg">
+          <div className="relative h-auto md:h-[300px] w-full aspect-video md:aspect-auto overflow-hidden rounded-lg">
             <Image
-              src="/images/background.jpg"
+              src="/images/aboutus/aboutus.png"
               alt="Acerca de Nosotros"
               className="h-full w-full object-cover"
               fill
